@@ -1,0 +1,23 @@
+# My Favourite Ramen Shop In the World
+
+```{r, echo = F}
+
+library(leaflet)
+
+date <- Sys.Date()
+
+```
+
+The date of the assignment is `r date`.
+
+```{r, echo = F}
+
+my_map <- leaflet() %>% addTiles() %>%
+
+  addMarkers(lat = 35.00444981739815, lng = 135.7573496960362,
+
+             popup = "<a href='http://www.sugari.net/'>
+
+             Wajoryomen Sugari</a>")
+my_map
+```
